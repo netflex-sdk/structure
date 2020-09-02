@@ -54,6 +54,8 @@ class Field implements CastsAttributes
       case 'checkbox':
         return boolval(intval($value));
       case 'integer':
+      case 'entry':
+      case 'customer':
         return intval($value);
       case 'float':
         return floatval($value);
